@@ -1,0 +1,136 @@
+.member-sidebar {
+  width: 70px;
+  height: 100%;
+  background-color: hsl(212, 100%, 25%);
+  position: fixed;
+  padding-top: 30px;
+  color: #ffffff;
+  transition: 0.5s;
+}
+.member-sidebar:hover {
+  width: 300px;
+}
+.member-sidebar:hover li p{
+  visibility: visible;
+  transition: 2s;
+}
+.member-sidebar:hover .member-sisdebar-menu-texthean {
+  visibility: visible;
+  transition: 2s;}
+
+
+.member-sisdebar-menu {
+  position: Block;
+  top: 3.5em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.member-sisdebar-menu-texthean {
+  position: fixed;
+  font-size: 30px;
+  top: 20px;
+  left: 15px;
+  visibility: hidden;
+}
+.member-sisdebar-menu {
+  position: fixed;
+  border-left-width: 50px;
+
+}
+.member-sisdebar-menu li{
+  position: relative;
+  bottom: -0.5em;
+}
+
+.member-sisdebar-menu li p{
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  margin: -15px;
+  left: 5em;
+  transition: 0.3s;
+  bottom: 1.9em;
+  visibility: hidden;
+}
+
+.member-sisdebar-menu li img {
+  position:sticky;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  margin: 16px;
+  left: 0.5em;
+  top: 0.5em;
+}
+
+.member-sisdebar-textmenu-logout {
+  position: relative;
+  top: 2em;
+}
+.member-sisdebar-textmenu-report-summary:hover {
+  position: relative;
+  background-color: rgba(213, 213, 213, 0.59);
+  border-radius: 20px;
+  width: 14vw;
+  left: 1em;
+  transition: 0.5s;}
+.member-sisdebar-textmenu-officer:hover  {
+  position: relative;
+  background-color: rgba(213, 213, 213, 0.59);
+  border-radius: 20px;
+  width: 14vw;
+  left: 1em;
+  transition: 0.5s;
+}
+
+.member-sisdebar-textmenu-member:hover {
+  position: relative;
+  background-color: rgba(213, 213, 213, 0.59);
+  border-radius: 20px;
+  width: 14vw;
+  left: 1em;
+  transition: 0.5s;
+}
+.member-sisdebar-textmenu-assign:hover {
+  position: relative;
+  background-color: rgba(213, 213, 213, 0.59);
+  border-radius: 20px;
+  width: 14vw;
+  left: 1em;
+  transition: 0.5s;
+}
+.member-sisdebar-textmenu-service-group:hover {
+  position: relative;
+  background-color: rgba(213, 213, 213, 0.59);
+  border-radius: 20px;
+  width: 14vw;
+  left: 1em;
+  transition: 0.5s;
+}
+.member-sisdebar-textmenu-automatic-message:hover {
+  position: relative;
+  background-color: rgba(213, 213, 213, 0.59);
+  border-radius: 20px;
+  width: 15vw;
+  left: 1em;
+  transition: 0.5s;
+}
+.member-sisdebar-textmenu-Instruction-Manual:hover {
+  position: relative;
+  background-color: rgba(213, 213, 213, 0.59);
+  border-radius: 20px;
+  width: 14vw;
+  left: 1em;
+  transition: 0.5s;
+}
+.member-sisdebar-textmenu-logout:hover {
+  position: relative;
+  background-color: rgba(213, 213, 213, 0.59);
+  border-radius: 20px;
+  width: 14vw;
+  left: 1em;
+  transition: 0.5s;
+}
+
