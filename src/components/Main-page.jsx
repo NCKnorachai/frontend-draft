@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../style/member.css";
+import "../style/main.css";
 import Book from "../asset/icon/book.png";
 import People from "../asset/icon/people.png";
 import Business from "../asset/icon/business.png";
@@ -8,23 +8,21 @@ import Menu from "../asset/icon/menu.png";
 import Chat from "../asset/icon/chat.png";
 import docs from "../asset/icon/google-docs.png";
 import Logout from "../asset/icon/logout.png";
-import Members from "./Members";
+import Members from "./Members-nav";
 import Placeholder from "./Placeholder";
 
 export default function Mainpage() {
   const [PagesNum, setPagesNum] = useState(0);
-  function renderSwitch(PagesNum){
-    switch(PagesNum){
+  function renderSwitch(PagesNum) {
+    switch (PagesNum) {
       case 1:
         return <Members />;
       case 2:
         return <Placeholder />;
-      case 3:
-        return <Members />
       default:
-        <Members/>;
+        <Members />;
         break;
-    };
+    }
   }
   return (
     <div className="wrapper">
@@ -59,14 +57,13 @@ export default function Mainpage() {
             <img src={docs} alt="" />
             <p>คู่มือการใช้งาน</p>
           </li>
-          <li className="member-sisdebar-textmenu-logout">
+          <li className="member-sidebar-textmenu-logout">
             <img src={Logout} alt="" />
             <p>ออกจากระบบ</p>
           </li>
         </ul>
       </div>
-      <h1>test render</h1>
-      {renderSwitch(PagesNum)}
+      <div className="main-sidebar-menu-render">{renderSwitch(PagesNum)}</div>
     </div>
   );
 }

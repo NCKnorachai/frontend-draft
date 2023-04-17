@@ -1,0 +1,45 @@
+.v-main-wrop {
+  /* background-color: black; */
+  padding: 0em 1em;
+}
+.v-main-wrop-row {
+  width: 3em;
+  /* background-color: rgb(27, 227, 227); */
+}
+.v-main-wrop-row-text {
+  width: 20em;
+
+  /* background-color: rgb(233, 139, 25); */
+}
+.v-main-wrop-row-text h1 {
+  width: 3em;
+  font: 2.5em sans-serif;
+  /* background-color: bisque; */
+}
+.v-slid-group-wrapper-p {
+  height: 1.5em;
+  /* background-color: blue; */
+}
+.v-slid-group-content-p {
+  display: flex;
+  height: 2.5em;
+  width: 90vw;
+  border-bottom: 1px solid rgba(202, 202, 202, 0.282);
+  margin: 2em -1em;
+}
+.v-slid-group-content-p p {
+  margin: -0.1em 1.5em;
+  background: transparent;
+  border: none;
+  font: 1.5em sans-serif;
+}
+.v-slid-group-p {
+  display: flex;
+  margin: 0em 2em;
+}
+
+.v-slid-group-content-p p:hover {
+  cursor: pointer;
+  color: hsl(237, 83%, 52%);
+  border-bottom: 2px solid hsl(237, 83%, 52%);
+}
