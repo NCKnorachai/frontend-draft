@@ -7,18 +7,18 @@ export default function Members1() {
         <thead className="member-main-teble-thead">
           <tr>
             <th> </th>
-            <th>2023-04-10</th>
-            <th>2023-04-11</th>
-            <th>2023-04-12</th>
-            <th>2023-04-13</th>
-            <th>2023-04-14</th>
-            <th>2023-04-15</th>
-            <th>2023-04-16</th>
+            <th>10/เม.ย/2566</th>
+            <th>11/เม.ย/2566</th>
+            <th>12/เม.ย/2566</th>
+            <th>13/เม.ย/2566</th>
+            <th>14/เม.ย/2566</th>
+            <th>15/เม.ย/2566</th>
+            <th>16/เม.ย/2566</th>
           </tr>
         </thead>
         <tbody className="member-main-teble-thead">
           <tr>
-            <td>จำนวนคนนัดทั้งหมด</td>
+            <td className="member-main-teble-thead-textA">จำนวนคนนัดทั้งหมด</td>
             <td>0</td>
             <td>0</td>
             <td>0</td>
@@ -28,7 +28,7 @@ export default function Members1() {
             <td>0</td>
           </tr>
           <tr>
-            <td>จำนวนคนตรงต่อเวลา</td>
+            <td className="member-main-teble-thead-textB">จำนวนคนตรงต่อเวลา</td>
             <td>0 | 0%</td>
             <td>0 | 0%</td>
             <td>0 | 0%</td>
@@ -38,7 +38,7 @@ export default function Members1() {
             <td>0 | 0%</td>
           </tr>
           <tr>
-            <td>จำนวนคนมาก่อนเวลา</td>
+            <td className="member-main-teble-thead-textC">จำนวนคนมาก่อนเวลา</td>
             <td>0 | 0%</td>
             <td>0 | 0%</td>
             <td>0 | 0%</td>
@@ -48,7 +48,7 @@ export default function Members1() {
             <td>0 | 0%</td>
           </tr>
           <tr>
-            <td>จำนวนคนมาหลังเวลา</td>
+            <td className="member-main-teble-thead-textD">จำนวนคนมาหลังเวลา</td>
             <td>0 | 0%</td>
             <td>0 | 0%</td>
             <td>0 | 0%</td>
@@ -58,7 +58,9 @@ export default function Members1() {
             <td>0 | 0%</td>
           </tr>
           <tr>
-            <td>จำนวนคนไม่มาตามนัด</td>
+            <td className="member-main-teble-thead-textE">
+              จำนวนคนไม่มาตามนัด
+            </td>
             <td>0 | 0%</td>
             <td>0 | 0%</td>
             <td>0 | 0%</td>
@@ -67,17 +69,23 @@ export default function Members1() {
             <td>0 | 0%</td>
             <td>0 | 0%</td>
           </tr>
-          <div className="member-main-teble-lower">
-            <p>Rows per page:</p>
-            <select>
-                <option>5</option>
-                <option>10</option>
-                <option>15</option>
-                <option>All</option>
-            </select>
-          </div>
         </tbody>
       </table>
+      <div className="member-main-flex-teble-lower">
+        <div className="member-main-teble-lower">
+          <div className="member-main-teble-lower-text">
+            <p>Rows per page:</p>
+            <select>
+              <option>5</option>
+              <option>10</option>
+              <option>15</option>
+              <option>All</option>
+            </select>
+            <p>1-5 of 5</p>
+        
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,7 @@
-
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap%27);
+body{
+  font-family: 'Poppins', ;
+}
 .member-sidebar {
   width: 70px;
   height: 100%;
@@ -76,6 +79,7 @@
   border-radius: 20px;
   width: 14vw;
   height: 9vh;
+  transition: 0.5s;
 }
 .member-sisdebar-textmenu-officer:hover  {
   position: relative;
@@ -83,6 +87,7 @@
   border-radius: 20px;
   width: 14vw;
   height: 9vh;
+  transition: 0.5s;
 }
 
 .member-sisdebar-textmenu-member:hover {
@@ -91,7 +96,7 @@
   border-radius: 20px;
   width: 14vw;
   height: 9vh;
- 
+  transition: 0.5s;
 }
 .member-sisdebar-textmenu-assign:hover {
   position: relative;
@@ -99,7 +104,7 @@
   border-radius: 20px;
   width: 14vw;
   height: 9vh;
-  
+  transition: 0.5s;
 }
 .member-sisdebar-textmenu-service-group:hover {
   position: relative;
@@ -107,7 +112,7 @@
   border-radius: 20px;
   width: 14vw;
   height: 9vh;
-  
+  transition: 0.5s;
 }
 .member-sisdebar-textmenu-automatic-message:hover {
   position: relative;
@@ -115,7 +120,7 @@
   border-radius: 20px;
   width: 15vw;
   height: 9vh;
-  
+  transition: 0.5s;
 }
 .member-sisdebar-textmenu-Instruction-Manual:hover {
   position: relative;
@@ -123,6 +128,7 @@
   border-radius: 20px;
   width: 14vw;
   height: 9vh;
+  transition: 0.5s;
 }
 .member-sidebar-textmenu-logout:hover {
   position: relative;
@@ -130,8 +136,10 @@
   border-radius: 20px;
   width: 14vw;
   height: 9vh;
-  
+  transition: 0.5s;
 }
 .main-sidebar-menu-render{
   padding: 3em 5em;
+  align-items: center;
+  transition: 0.5s;
 }

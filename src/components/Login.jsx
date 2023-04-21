@@ -1,18 +1,14 @@
-import { createGlobalStyle } from "styled-components";
+
 import "../style/login.css";
-import Photo from "../asset/bg/bg-login.png";
 import Logo from "../asset/icon/icon-login.png";
-const GStyles = createGlobalStyle`
-body{
-  background-color:white;
-}
-`;
+import Photo from "../asset/bg/bg-login.png";
+import {Link} from 'react-router-dom'
+
 function Login() {
   return (
     <div className="login-wrapper">
-      {/* <div><img src={Photo} alt="" /></div> */}
+      <img className="login-wrapper-bg" src={Photo} alt="" />
       <div className="login-wrapper-input">
-        <GStyles />
         <div className="log-in-login-box-wrapper">
           <div className="login-login-box">
             <form className="login-form">
@@ -25,7 +21,7 @@ function Login() {
               </div>
               <div className="form-iogin-input">
                 <div className="inputbox-username">
-                  <input type="text" required="required" />
+                  <input type="text" required="required"/>
                   <label>ชื่อผู้ใช้</label>
                   <i></i>
                 </div>
@@ -36,7 +32,7 @@ function Login() {
                 </div>
               </div>
               <div>
-                <button className="login-btn">เข้าสู้ระบบ</button>
+                <Link to={"/main"}><button className="login-btn">เข้าสู้ระบบ</button></Link>
               </div>
             </form>
           </div>

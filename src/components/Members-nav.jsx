@@ -1,5 +1,5 @@
 
-import "../style/members.css";
+import "../style/members-nav.css";
 import React, { useState } from "react";
 import Members1 from "./Members1";
 import Members2 from "./Members2";
@@ -7,6 +7,8 @@ const Members = () => {
   const [MembersnavNum, setMembersnavNum] = useState(0);
     function renderSwitch(MembersnavNum){
       switch(MembersnavNum){
+        case 0 : 
+        return <Members1/>
         case 1:
           return <Members1 />;
         case 2:

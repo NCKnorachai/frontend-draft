@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../style/members1.css";
 import Switch from "@mui/material/Switch";
 import {
@@ -39,6 +39,49 @@ const data = [
   },
 ];
 export default function Members1() {
+  const [switchOneCheck, setswitchOneCheck] = useState(false);
+  const [switchTwoCheck, setswitchTwoCheck] = useState(false);
+  function toRendergraph(switchOneCheck) {
+    if(switchOneCheck== true){
+      console.log(switchOneCheck)
+    return   <BarChart width={500} height={350} data={data}>
+    <CartesianGrid strokeDasharray="3 3" />
+    <XAxis dataKey="name" />
+    <YAxis />
+    <Tooltip />
+    <Legend />
+    <Bar dataKey="pv" fill="#8884d8" />
+    <Bar dataKey="uv" fill="#82ca9d" />
+  </BarChart>}
+    else return
+  }
+  function toRendergraphTwo(switchTwoCheck) {
+    if(switchTwoCheck== true){
+      console.log(switchTwoCheck)
+      return   <LineChart
+      width={550}
+      height={350}
+      data={data}
+      margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+    >
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="name" />
+      <YAxis />
+      <Tooltip />
+      <Legend />
+      <Line type="monotone" dataKey="pv" stroke="#8884d8" />
+      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+      <Line type="monotone" dataKey="AV" stroke="#e21212" />
+    </LineChart>
+    }else return
+  }
+  const switchOneHandler = (event) => {
+    setswitchOneCheck(event.target.checked)
+  }
+  const switchTwoHandler = (event) => {
+    setswitchTwoCheck(event.target.checked)
+  }
+
   return (
     <div><div className="member-group-wrapper-sw">
     <div className="member-slid-group-conten-sw">
@@ -46,7 +89,7 @@ export default function Members1() {
         <div className="member-group-switch-text-content1">
           <div className="member-group-switch-content1">
             <div className="member-group-switch-content1-switcw1">
-              <Switch {..."Test"} defaultChecked />
+              <Switch checked={switchOneCheck} onChange={switchOneHandler} />
               <p>จำนวนการนัดหมายรายสัปดาห์</p>
             </div>
           </div>
@@ -54,7 +97,7 @@ export default function Members1() {
         <div className="member-group-switch-text-content2">
           <div className="member-group-switch-content2">
             <div className="member-group-switch-content2-switcw2">
-              <Switch {..."Test"} defaultChecked className="switch" />
+              <Switch className="switch" checked={switchTwoCheck} onChange={switchTwoHandler} />
               <p>จำนวนการนัดหมายโดยเฉลี่ย</p>
             </div>
           </div>
@@ -64,32 +107,10 @@ export default function Members1() {
   </div>
   <div className="member-group-flex">
     <div className="member-group-chart1">
-      <BarChart width={500} height={350} data={data}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="pv" fill="#8884d8" />
-        <Bar dataKey="uv" fill="#82ca9d" />
-      </BarChart>
+      {toRendergraph(switchOneCheck)}
     </div>
     <div className="member-group-chart2">
-      <LineChart
-        width={550}
-        height={350}
-        data={data}
-        margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Line type="monotone" dataKey="pv" stroke="#8884d8" />
-        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-        <Line type="monotone" dataKey="AV" stroke="#e21212" />
-      </LineChart>
+      {toRendergraphTwo(switchTwoCheck)}
     </div>
   </div></div>
   )

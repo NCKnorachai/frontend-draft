@@ -9,16 +9,21 @@ import Chat from "../asset/icon/chat.png";
 import docs from "../asset/icon/google-docs.png";
 import Logout from "../asset/icon/logout.png";
 import Members from "./Members-nav";
-import Placeholder from "./Placeholder";
-
+import StaffNav from "./Staff";
+import { Link } from "react-router-dom";
+const linkStyle = {
+  textDecoration :"none"
+}
 export default function Mainpage() {
   const [PagesNum, setPagesNum] = useState(0);
   function renderSwitch(PagesNum) {
     switch (PagesNum) {
+      case 0:
+        return <Members />;
       case 1:
         return <Members />;
       case 2:
-        return <Placeholder />;
+        return <StaffNav />;
       default:
         <Members />;
         break;
@@ -59,7 +64,9 @@ export default function Mainpage() {
           </li>
           <li className="member-sidebar-textmenu-logout">
             <img src={Logout} alt="" />
-            <p>ออกจากระบบ</p>
+            <Link to={"/"} style={linkStyle}>
+              <p>ออกจากระบบ</p>
+            </Link>
           </li>
         </ul>
       </div>

@@ -5,6 +5,8 @@ import Main from "./components/Main-page"
 import Members1 from './components/Members1';
 import Members2 from './components/Members1';
 import {Routes,Route} from 'react-router-dom'
+import Test from './components/test';
+
 function App() {
   return (
     <div className='App'>
@@ -13,6 +15,7 @@ function App() {
         <Route path='/main' element={<Main/>}/>
         <Route path='/Members1' element={<Members1/>}/>
         <Route path='/Members2' element={<Members2/>}/>
+        <Route path="/test" element={<Test/>}/>
       </Routes>
     </div>
   )
